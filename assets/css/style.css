@@ -1,49 +1,50 @@
-* { 
-    box-sizing: border-box;
-  }
+
+@media screen and (max-width: 380px) {
 
 html {
   background-color: #EFEFEF;
+  font-size: 10px;
 }
 
 body {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 2px;
+    margin-bottom: 2px;
     margin-left: auto;
     margin-right: auto; 
-    padding-top: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-top:calc(5px + 1vw);
+    padding-left: calc(5px + 1vw);
+    padding-right: calc(5px + 1vw);
     padding-bottom: 0px; 
     min-height: 100vh;
-    width: 70vw;
-    min-width: 600px;
-    max-width: 1200px;
+    width: 95%;
+    min-width: 200px;
+    max-width: 480px;
     background: white;
     overflow: auto;
-    font-size: 14px;
+    position:absolute;
 }
 
 header {
     background: white;
     margin-bottom: 0px;
+    font-size: calc(0.4rem + 1vw)
 }
 
 #topmenu {
-  font-size: 0.7rem;
+  font-size: calc(0.4rem + 1vw)
 }
 
 h1 {
-    font-size: 2rem;
+  font-size: calc(0.4rem + 2vw);
 }
 
 h5 {
-  font-size: 0.8rem;
+  font-size: calc(0.4rem+1vw);
   margin: 0px;
 }
 
 .btn {
-  font-size: 1em;  
+  font-size:calc(0.7rem+1vw);  
 }
 
 .price {
@@ -56,18 +57,29 @@ h5 {
   margin: 2px;
   padding-top: 1px;
   padding-bottom:1px;
-  font-size: 1rem;
-}
+  font-size: calc(14px+3vw);
+
+.card-text {
+  font-size: calc(10px+3vw);
+  }
 
 .card-body {
   margin: 0px;
+
 }
 
 #shirts {
-    width: 100%;
-    min-width: 500px;
-    max-width: 1200px;
-    object-fit: cover;
+  visibility: none !important;
+}
+
+
+img {
+  width: 80%;
+  min-width: 200px;
+  max-width: 480px;
+  justify-content: center;
+  margin: auto;
+ place-items: center stretch;
 }
 
 .container2 {
@@ -103,9 +115,15 @@ h5 {
 .grid1 {
     display: grid;
     grid-gap: 15px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "card1 card2 card3 card4"
-                         "card5 card6 card7 card8";
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: "card1"
+                         "card2" 
+                         "card3"
+                         "card4"
+                         "card5"
+                         "card6" 
+                         "card7"
+                        "card8";
   }
   
   /* custom class for background*/
@@ -140,20 +158,24 @@ h5 {
     grid-auto-flow: row;
     grid-template-areas:
       "empty1 callus empty2";
-    height: 100px;
+    height: 10%;
   }
   
   .empty1 {
     grid-area: empty1; 
   }
   
+  .empty2 {
+    grid-area: empty2; 
+   }
+  
   .callus { 
     grid-area: callus;
-    font-size: 0.9rem;
+    font-size: calc(0.5rem+2vw);
   }
 
   .time {
-    font-size: 0.6rem;
+    font-size: calc(0.1rem+2vw);
   }
 
   .price {
@@ -162,11 +184,14 @@ h5 {
     padding: 0px;
   }
   
-  .empty2 {
-     grid-area: empty2; 
-    }
+  
 
   .bottom {
-    font-size: 0.7rem;
+    font-size:  calc(0.5rem+2vw);
   }
   
+
+
+}
+  
+
