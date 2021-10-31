@@ -10,60 +10,43 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-  <header class="border-bottom border-secondary">
-        <h1 class="p-2"> Men's<span class="opacity-50">Clothes</span></h1>
-        <nav class="navbar navbar-expand-sm p-0 m-0">
-        <div id="topmenu">
-        <ul class="nav m-0 fw-light">
-            <li class="nav-item border-end">
-              <a class="nav-link active ps-2 text-secondary opacity-55" aria-current="page" href="#">Home</a>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><h1> Men's<span class="opacity-50">Clothes</span></h1></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu bg-dark text-white" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item text-white" href="#">Sweaters</a></li>
+              <li><a class="dropdown-item text-white" href="#">Jeans</a></li>
+              <li><a class="dropdown-item text-white" href="#">Coats&Jackets</a></li>
+              <li><a class="dropdown-item text-white" href="#">Activewear</a></li>
+              <li><a class="dropdown-item text-white" href="#">Shorts</a></li>
+              <li><a class="dropdown-item text-white" href="#">Pants</a></li>
+            </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shopping Cart</a>
+              <a class="nav-link" href="#">Wish List</a>b
+              <a class="nav-link" href="#">My Account</a>
             </li>
-            <li class="nav-item border-end">
-              <a class="nav-link text-secondary opacity-55" href="#">Wish List</a>
-            </li>
-            <li class="nav-item border-end">
-              <a class="nav-link text-secondary opacity-55" href="#">My Account</a>
-            </li>
-            <li class="nav-item border-end">
-                <a class="nav-link text-secondary opacity-55" href="#">Shopping Cart</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-secondary opacity-55" href="#">Checkout</a>
-              </li>
-          </ul>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
-</header>
-<nav class="navbar navbar-customclass navbar-expand-xs bg-dark text-white p-0">
-  <div>
-    <ul class="navbar-nav mr-auto mt-2 mt-sm-7">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Tops</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Sweaters</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Jeans</a>
-      </li>
-	  <li class="nav-item">
-        <a class="nav-link" href="#">Coats&Jackets</a>
-      </li>
-	  <li class="nav-item">
-        <a class="nav-link" href="#">Activewear</a>
-      </li>
-	  <li class="nav-item">
-        <a class="nav-link" href="#">Shorts</a>
-      </li>
-	  <li class="nav-item">
-        <a class="nav-link" href="#">Pants</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-<img class="opacity-80" id="shirts" src="./assets/images/shirts.jpg" alt="shirts"> 
-
+  </header>
+  
+<img id="shirts" class="opacity-80 img-fluid"  src="./assets/images/shirts.jpg" alt="shirts"> 
 
 <div class="container2 row mt-2">
   <div class="card bg-light text-white handbags col-md-4 m-0 p-0 border-white">
@@ -94,8 +77,8 @@
           <div class="card-body">
             <h5 class="card-title">T-shirt</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            <p class="price"> 50$ <span class="text-decoration-line-through text-dark">178.21$</span> </p> 
-            <a href="#" class="btn btn-dark">Add to cart</a>
+            <p class="price mb-4 fs-4"> 50$ <span class="text-decoration-line-through text-dark">178.21$</span> </p> 
+            <a href="#" class="btn btn-lg btn-dark">Add to cart</a>
           </div>
         </div>
         <div class="card card2 text-center  border-white">
@@ -103,8 +86,8 @@
           <div class="card-body">
             <h5 class="card-title">T-shirt</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            <p class="price"> 178.21 $</p>
-            <a href="#" class="btn btn-dark">Add to cart</a>
+            <p class="price  mb-4 fs-4"> 178.21 $</p>
+            <a href="#" class="btn btn-lg btn-md btn-dark">Add to cart</a>
           </div>
         </div>
         <div class="card card3 text-center  border-white">
@@ -112,8 +95,8 @@
           <div class="card-body">
             <h5 class="card-title">T-shirt</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            <p class="price"> 178 $</p>
-            <a href="#" class="btn btn-dark">Add to cart</a>
+            <p class="price  mb-4 fs-4"> 178 $</p>
+            <a href="#" class="btn btn-lg btn-dark">Add to cart</a>
           </div>
         </div>
         
@@ -122,8 +105,8 @@
           <div class="card-body">
             <h5 class="card-title">T-shirt</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            <p class="price"> 178 $</p>
-            <a href="#" class="btn btn-dark">Add to cart</a>
+            <p class="price  mb-4 fs-4"> 178 $</p>
+            <a href="#" class="btn btn-lg btn-dark">Add to cart</a>
           </div>
         </div>
         <div class="card card5 text-center border-white">
@@ -131,8 +114,8 @@
           <div class="card-body">
             <h5 class="card-title">T-shirt</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            <p class="price"> 178 $</p>
-            <a href="#" class="btn btn-dark">Add to cart</a>
+            <p class="price  mb-4 fs-4"> 178 $</p>
+            <a href="#" class="btn btn-lg btn-dark">Add to cart</a>
           </div>
         </div>
         <div class="card card6 text-center  border-white">
@@ -140,8 +123,8 @@
           <div class="card-body">
             <h5 class="card-title">T-shirt</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            <p class="price"> 178 $</p>
-            <a href="#" class="btn btn-dark">Add to cart</a>
+            <p class="price mb-4 fs-4"> 178 $</p>
+            <a href="#" class="btn btn-lg btn-dark">Add to cart</a>
           </div>
         </div>
         <div class="card card7 text-center  border-white">
@@ -149,8 +132,8 @@
           <div class="card-body">
             <h5 class="card-title">T-shirt</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            <p class="price"> 178 $</p>
-            <a href="#" class="btn btn-dark">Add to cart</a>
+            <p class="price mb-4 fs-4"> 178 $</p>
+            <a href="#" class="btn btn-lg btn-dark">Add to cart</a>
           </div>
         </div>
         <div class="card card8 text-center  border-white">
@@ -158,8 +141,8 @@
           <div class="card-body">
             <h5 class="card-title">T-shirt</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            <p class="price"> 178 $</p>
-            <a href="#" class="btn btn-dark">Add to cart</a>
+            <p class="price  mb-4 fs-4"> 178 $</p>
+            <a href="#" class="btn btn-lg btn-dark">Add to cart</a>
           </div>
         </div>
       </div>
@@ -167,7 +150,7 @@
       <div class="container3 mt-2 p-1">
         <div class="empty1"></div>
         <div class="callus text-center">
-          <h5 class="text-uppercase callus">call us (800) 2345-6789</h5>
+          <h5 id="callus" class="text-uppercase">call us (800) 2345-6789</h5>
           <span class="text-secondary text-uppercase time">hours: 9am-7pm pst m-fr</span>
         </div>
         <div class="empty2"></div>
@@ -209,12 +192,15 @@
               <li class="list-group-item p-0 m-0"><a class="nav-link  p-0 m-1 text-secondary opacity-55" href="#">Newsletter</a></li>
             </ul>
           </div>
-          <div class="bg-dark text-start text-white fw-whhite fs-6 p-2 m-1">
+          <div class="bg-dark text-start text-white fw-whhite fs-6 p-2 mt-1 mb-0">
            <span class="bottom">
           Powered by Opencart &#169; 2013 
            </span>
         </div>
-        </div>
+        </div> 
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
     
 </html>

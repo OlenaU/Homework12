@@ -3,7 +3,6 @@
 
 html {
   background-color: #EFEFEF;
-  font-size: 10px;
 }
 
 body {
@@ -21,25 +20,24 @@ body {
     max-width: 480px;
     background: white;
     overflow: auto;
-    position:absolute;
 }
 
 header {
     background: white;
     margin-bottom: 0px;
-    font-size: calc(0.4rem + 1vw)
+    font-size: calc(14px + 1vw)
 }
 
 #topmenu {
-  font-size: calc(0.4rem + 1vw)
+  font-size: calc(14px + 1vw)
 }
 
 h1 {
-  font-size: calc(0.4rem + 2vw);
+  font-size: calc(14px + 2vw);
 }
 
 h5 {
-  font-size: calc(0.4rem+1vw);
+  font-size: calc(0.3rem+1vw);
   margin: 0px;
 }
 
@@ -48,9 +46,10 @@ h5 {
 }
 
 .price {
-  font-size: 0.8rem;
+  font-size: calc(14px+3vw);
   color: red;
   padding-bottom: 3px;
+  margin-bottom: 10px;
 }
 
 .card-title {
@@ -58,6 +57,7 @@ h5 {
   padding-top: 1px;
   padding-bottom:1px;
   font-size: calc(14px+3vw);
+}
 
 .card-text {
   font-size: calc(10px+3vw);
@@ -70,6 +70,7 @@ h5 {
 
 #shirts {
   visibility: none !important;
+  display: none;
 }
 
 
@@ -125,34 +126,11 @@ img {
                          "card7"
                         "card8";
   }
-  
-  /* custom class for background*/
-  .navbar-customclass {
-      background-color: black;
-  }
  
-  /* navigation link text color */
-  .navbar-customclass .navbar-nav .nav-link {
-      color: rgba(255,255,255,.6);
-  }
-  /* navigation links anchor hover and active styles */
-  .navbar-customclass .nav-item.active .nav-link,
-  .navbar-customclass .nav-item:hover .nav-link {
-      color: #ffffff;
-  }
-  
-  .navbar-customclass .navbar-nav .nav-link {
-      color: white;
-  }
-  
-  .navbar-customclass .nav-item.active .nav-link,
-  .navbar-customclass .nav-item:hover .nav-link {
-      color: grey;
-  }
   
   .container3 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 0.25fr 2.5fr 0.25fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -171,7 +149,11 @@ img {
   
   .callus { 
     grid-area: callus;
+   
+  #callus {
     font-size: calc(0.5rem+2vw);
+  }
+
   }
 
   .time {
@@ -190,7 +172,9 @@ img {
     font-size:  calc(0.5rem+2vw);
   }
   
-
+  #bottom {
+    font-size:  calc(0.4rem+2vw);
+  }
 
 }
   
